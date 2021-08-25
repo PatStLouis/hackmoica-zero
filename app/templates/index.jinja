@@ -1,0 +1,10 @@
+{% extends('base.jinja') %}
+{% block content %}
+{% if request.MOBILE %}
+{% include('mobile/style.jinja') %}
+{% include('mobile/index.jinja') %}
+{% else %}
+{% include('desktop/style.jinja') %}
+{% include('desktop/index.jinja') %}
+{% endif %}
+{% endblock %}

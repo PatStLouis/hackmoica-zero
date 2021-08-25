@@ -1,0 +1,38 @@
+
+<body>
+    <div class="main-block">
+        <div class="container">
+            <img src="static/images/logo_blanc.png" class="logo">
+            <br>
+            <br>
+            <br>
+            <h2>Club étudiant de piratage éthique et sécurité offensive du Cégep de l'Outaouais.</h4>
+            <br>
+            <br>
+            <br>
+            <div class="form">
+                <form method="post">
+                    <h2>Tirage</h2>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="info">
+                        {{ form.last_name(placeholder="Nom") }}
+                        {{ form.first_name(placeholder="Prénom") }}
+                        {{ form.etu(placeholder="# Étudiant") }}
+                    </div>
+                    <div class="checkbox">
+                        <br>
+                        <br>
+                        <br>
+                        <span>En m'inscrivant, j'accepte la <a href="#">politique de confidentialité</a>.</span>
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+                    {{ form.submit(class_="btn-item") }}
+                </form>
+        </div>
+        </div>
+    </div>
+  </body>
