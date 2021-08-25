@@ -1,12 +1,25 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>ECHO | Formulaire tirage</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
-    <link rel="icon" href="static/images/ico.png">
-    {% include('style.jinja') %}
-  </head>
+<html lang="zxx">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-{% block content %}{% endblock %}
+        <title>ECHO | Formulaire tirage</title>
+        <link rel="icon" href="static/images/ico.png">
+        <link rel="stylesheet" href="static/css/style.css">
+        <link rel="stylesheet" href="static/css/responsive.css">
+    </head>
+    <body class="darker">
+        <!-- Preloader -->
+        <div id="preloader">
+            <div class="preload-content">
+                <div id="loader-load"></div>
+            </div>
+        </div>
+        {% block content %}{% endblock %}
+        {% include('footer.jinja') %}
+        {% include('scripts.jinja') %}
+    </body>
 </html>

@@ -1,0 +1,37 @@
+
+<form method="post">
+{{ form.csrf_token }}
+    <div class="row">
+        <div class="col-12">
+            <div id="success_fail_info"></div>
+        </div>
+
+        <div class="col-12 col-md-12">
+            <div class="group wow fadeInUp" data-wow-delay="0.3s">
+                {{ form.first_name() }}
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Prénom</label>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="group wow fadeInUp" data-wow-delay="0.3s">
+                {{ form.last_name() }}
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Nom</label>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="group wow fadeInUp" data-wow-delay="0.3s">
+                {{ form.etu() }}
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label># Étudiant</label>
+            </div>
+        </div>
+        <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.6s">
+            {{ form.submit(class_="more-btn") }}
+        </div>
+    </div>
+</form>
